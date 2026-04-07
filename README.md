@@ -4,6 +4,14 @@ Aplicacion web y pipeline ETL para generar fichas tecnicas por unidad medica, co
 
 Este repositorio esta preparado para portafolio publico con dataset demo anonimizado.
 
+## Aviso de demo
+
+Todo el contenido visible en este repositorio es de demostracion:
+
+- La informacion mostrada en capturas, JSON y vistas del sistema es ficticia o anonimizada.
+- No se incluyen datos operativos reales ni credenciales de entornos productivos.
+- El objetivo es mostrar arquitectura, implementacion ETL y experiencia de producto para fines de portafolio.
+
 ## Stack
 
 - Frontend: PHP, HTML, CSS, JavaScript (Leaflet)
@@ -64,6 +72,25 @@ Crear un archivo `.env` basado en `.env.example` para ejecutar ETL con conexione
 - Este repositorio no incluye credenciales reales.
 - `data/input/` se considera informacion local/sensible y no debe publicarse.
 - Los JSON en `data/output/` son de demostracion y no representan datos operativos reales.
+
+## Capturas del proyecto
+
+### Inicio
+
+![Pantalla de inicio](docs/images/Inicio.png)
+![Mapa principal](docs/images/Inicio_mapa.png)
+![Vista de hospitales](docs/images/Inicio_Hopitales.png)
+
+### Ficha tecnica
+
+![Ficha tecnica hoja 1](docs/images/Ficha_Tec_Hoja1.png)
+![Ficha tecnica hoja 2](docs/images/Ficha_Tec_Hoja2.png)
+![Ficha tecnica hoja 3](docs/images/Ficha_Tec_Hoja3.png)
+![Ficha tecnica hoja 4](docs/images/Ficha_Tec_Hoja4.png)
+
+### Exportacion PDF
+
+![Reporte PDF](docs/images/Reporte_PDF.png)
 
 ## Pipeline ETL
 
