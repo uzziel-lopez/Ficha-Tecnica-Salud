@@ -1,0 +1,14 @@
+{
+  "name": "ficha-tecnica-pdf-export",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pdf:install": "npx playwright install chromium",
+    "pdf:smoke": "node scripts/generate_ficha_pdf.mjs --url \"http://localhost/Ficha_Tecnica/app/public/ficha_tec.php?unidad=0&pdf_mode=1\" --output /tmp/ficha_tecnica_smoke.pdf"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "playwright": "^1.53.2"
+  }
+}

@@ -1,0 +1,851 @@
+:root {
+  --imss-green-900: #154a36;
+  --imss-green-700: #1f6a4a;
+  --imss-green-500: #2f7f5c;
+  --imss-green-100: #e7f1eb;
+  --soil-700: #6f4a31;
+  --soil-200: #eadfd5;
+  --ink-900: #1f2a25;
+  --ink-700: #3f4f46;
+  --ink-500: #63746a;
+  --border-soft: #d9e2db;
+  --surface: #ffffff;
+  --surface-soft: #f7faf7;
+  --shadow-soft: 0 10px 24px rgba(22, 45, 34, 0.08);
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  color: var(--ink-900);
+  background: radial-gradient(circle at top, #eff4ef 0%, #f4f7f4 55%);
+}
+
+.navbar {
+  background: linear-gradient(180deg, var(--imss-green-700), var(--imss-green-900));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 10px 20px rgba(21, 45, 33, 0.18);
+}
+
+.navbar-content {
+  max-width: 1360px;
+  gap: 12px;
+}
+
+.navbar-title {
+  font-size: clamp(1.1rem, 2vw, 1.55rem);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.back-button {
+  background: rgba(255, 255, 255, 0.14) !important;
+  border: 1px solid rgba(255, 255, 255, 0.45) !important;
+  border-radius: 999px !important;
+  padding: 10px 16px !important;
+  font-weight: 600 !important;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.26) !important;
+}
+
+.ficha-container {
+  max-width: 1360px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-soft);
+  background: var(--surface);
+}
+
+.header {
+  background: linear-gradient(180deg, #205f43, var(--imss-green-900));
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.header-left h1 {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  letter-spacing: 0.01em;
+}
+
+.header-left h2 {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.logo {
+  width: 74px;
+  height: 74px;
+  border-radius: 10px;
+  border: 1px solid #d5e2d8;
+}
+
+.hospital-title,
+.zone-title,
+.column-title {
+  background: var(--soil-200);
+  color: var(--soil-700);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hospital-title {
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  padding: 12px 20px;
+}
+
+.zone-title {
+  font-size: 1rem;
+}
+
+.info-section,
+.population-data,
+.recursos-two-columns {
+  padding: 20px;
+}
+
+.info-section {
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 20px;
+}
+
+.hospital-image-container {
+  height: 380px;
+  background: #edf3ef;
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(22, 45, 34, 0.1);
+}
+
+.hospital-image {
+  height: 100%;
+}
+
+.hospital-image-container::before {
+  content: '';
+}
+
+.hospital-image-container.cambiando::after {
+  content: 'Cargando imagen';
+  background: rgba(20, 40, 30, 0.75);
+  border-radius: 999px;
+}
+
+.image-overlay {
+  background: linear-gradient(transparent, rgba(19, 47, 34, 0.85));
+}
+
+.unit-type-badge {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: none;
+  backdrop-filter: none;
+  font-size: 0.78rem;
+}
+
+.unit-type-badge.hgz,
+.unit-type-badge.hgs,
+.unit-type-badge.hgszmf,
+.unit-type-badge.umf {
+  background: linear-gradient(180deg, var(--imss-green-700), var(--imss-green-900));
+}
+
+.unit-type-badge:hover,
+.hospital-image-container:hover .unit-type-badge {
+  transform: translateY(-1px);
+}
+
+.technical-info {
+  background: var(--surface-soft);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+}
+
+.technical-info h3 {
+  color: var(--imss-green-900);
+}
+
+.info-label,
+.population-label {
+  color: var(--ink-700);
+}
+
+.info-value,
+.population-value {
+  color: var(--ink-900);
+}
+
+.population-section,
+.recursos-header {
+  background: linear-gradient(180deg, var(--imss-green-700), var(--imss-green-900));
+}
+
+.recursos-salud-section,
+.productividad-section {
+  border-top: 1px solid var(--border-soft);
+  margin: 0;
+}
+
+.recursos-salud-section {
+  background: linear-gradient(180deg, #f7faf7 0%, #f1f5f1 100%);
+}
+
+.recursos-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.recursos-header h2 {
+  font-size: 1.06rem;
+  letter-spacing: 0.05em;
+}
+
+.recursos-two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: 18px;
+}
+
+.recursos-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.column-title {
+  margin: 0;
+  border-radius: 12px;
+  border: 1px solid #d9ccc0;
+  box-shadow: 0 2px 7px rgba(52, 37, 27, 0.08);
+}
+
+.recurso-card {
+  position: relative;
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  box-shadow: 0 8px 16px rgba(21, 43, 32, 0.07);
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.recurso-card:hover {
+  transform: translateY(-1px);
+  border-color: #c8d6cb;
+  box-shadow: 0 12px 22px rgba(21, 43, 32, 0.11);
+}
+
+.recurso-card .card-header {
+  padding: 9px 12px;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.card-header.red {
+  background: linear-gradient(180deg, #6f4b33 0%, #5e3f2c 100%);
+}
+
+.recurso-card .card-content {
+  display: grid;
+  grid-template-columns: 156px minmax(0, 1fr);
+  align-items: stretch;
+  min-height: 126px;
+}
+
+.card-image {
+  width: 100%;
+  min-height: 126px;
+  background: #e7ede8;
+  border-right: 1px solid #d4dfd6;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.data-row {
+  font-size: 0.8rem;
+  border-radius: 7px;
+  padding: 5px 8px;
+  margin: 1px 0;
+  border-bottom: none;
+}
+
+.card-data {
+  padding: 8px 10px;
+  background: #fbfdfb;
+  gap: 1px;
+}
+
+.card-data .data-row span:first-child {
+  color: #43534a;
+  font-weight: 600;
+}
+
+.card-data .data-row span:last-child {
+  min-width: 34px;
+  text-align: right;
+  color: #26382f;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.data-row.highlight {
+  background: #f2f4f1;
+  border: 1px solid #e1e7e2;
+}
+
+.card-data .data-row:nth-child(odd):not(.highlight) {
+  background: #f8fbf8;
+}
+
+.card-data .data-row.highlight:first-child {
+  background: #e6eee8;
+  border: 1px solid #c8d9cb;
+}
+
+.card-data .data-row.highlight:first-child span:first-child {
+  color: #214936;
+}
+
+.card-data .data-row.highlight:first-child span:last-child {
+  color: #214936;
+  font-size: 0.92rem;
+}
+
+.data-row.total span:last-child {
+  color: var(--soil-700);
+}
+
+.productividad-section {
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.productividad-header {
+  background: linear-gradient(180deg, var(--soil-700), #7f5538);
+}
+
+.productividad-table {
+  min-width: 1080px;
+  font-size: 0.83rem;
+}
+
+.productividad-table thead,
+.productividad-table th,
+.productividad-table .indicator-column {
+  background: var(--imss-green-900);
+  border-color: #2d5a45;
+}
+
+.productividad-table td {
+  border-color: #d3ddd5;
+}
+
+.productividad-table tbody tr:nth-child(even) {
+  background-color: #f6faf7;
+}
+
+.productividad-table tbody tr:hover {
+  background-color: #eef4ee;
+  transform: none;
+}
+
+.productividad-table .indicator-name {
+  background: #f1ede6;
+  color: #2f4137;
+}
+
+.productividad-table .data-cell:hover {
+  background-color: #eaf2eb;
+  color: #234735;
+}
+
+.alert-warning {
+  border: 1px solid #e2c699;
+  background: #fbf4e6;
+  color: #5f4822;
+}
+
+.error-message {
+  border: 1px solid #d8b0b0;
+  background: #f8ebeb;
+  color: #692f2f;
+  border-radius: 10px;
+}
+
+.footer-info {
+  border-top: 1px solid var(--border-soft);
+  background: #f7faf7;
+}
+
+/* Ajustes especificos para tablas de motivos con estilos inline */
+#fichaContainer .productividad-section table[style*="font-size: 12px"] {
+  border: 1px solid #cfd8d1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#fichaContainer .productividad-section th[style*="background-color: #4CAF50"],
+#fichaContainer .productividad-section th[style*="background-color: #2e7d32"],
+#fichaContainer .productividad-section th[style*="background-color: #2196F3"],
+#fichaContainer .productividad-section th[style*="background-color: #1976D2"] {
+  background-color: #2f5f48 !important;
+  border-color: #294e3d !important;
+}
+
+#fichaContainer .productividad-section th[style*="background-color: #f44336"],
+#fichaContainer .productividad-section th[style*="background-color: #c62828"] {
+  background-color: #6d4a36 !important;
+  border-color: #5c3f2f !important;
+}
+
+#fichaContainer .productividad-section td[style*="background-color: #f0f0f0"] {
+  background-color: #ecefeb !important;
+  color: #304038;
+}
+
+#fichaContainer .productividad-section td[style*="border: 1px solid #999"],
+#fichaContainer .productividad-section th[style*="border: 1px solid #333"] {
+  border-color: #c6d0c8 !important;
+}
+
+@media (max-width: 1100px) {
+  .info-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hospital-image-container {
+    height: 320px;
+  }
+
+  .recursos-two-columns {
+    grid-template-columns: 1fr;
+    padding: 14px;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 14px;
+  }
+
+  .ficha-container {
+    margin: 10px;
+    border-radius: 12px;
+  }
+
+  .header,
+  .population-section,
+  .recursos-header {
+    padding: 12px 14px;
+  }
+
+  .info-section,
+  .population-data,
+  .recursos-two-columns {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .hospital-image-container {
+    height: 240px;
+  }
+
+  .recurso-card .card-content {
+    min-height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 96px;
+    min-height: 96px;
+    border-right: none;
+    border-bottom: 1px solid #d4dfd6;
+  }
+
+  .card-data {
+    padding: 9px;
+  }
+
+  .data-row {
+    font-size: 0.78rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Recursos v5 - limpio y consistente con iconos */
+#fichaContainer .recursos-salud-section {
+  background: #f4f6f4 !important;
+  padding-bottom: 8px !important;
+}
+
+#fichaContainer .recursos-header {
+  background: transparent !important;
+  border-bottom: none !important;
+  padding: 12px 18px 8px !important;
+  text-align: left !important;
+}
+
+#fichaContainer .recursos-header h2 {
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #1a3a1a !important;
+}
+
+#fichaContainer .recursos-two-columns {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 14px !important;
+  padding: 6px 14px 14px !important;
+  background: transparent !important;
+}
+
+#fichaContainer .recursos-column {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+}
+
+#fichaContainer .column-title {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  color: #7a977a !important;
+  margin: 0 0 -2px 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  text-align: left !important;
+}
+
+#fichaContainer .recurso-card {
+  position: relative !important;
+  border-radius: 12px !important;
+  border: 0.5px solid #d8e8d8 !important;
+  background: #ffffff !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+  padding-top: 38px !important;
+}
+
+#fichaContainer .recurso-card .card-header.red {
+  background: #1a5c2e !important;
+  border-radius: 8px 8px 0 0 !important;
+  padding: 6px 12px !important;
+  text-align: center !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+}
+
+#fichaContainer .recurso-card .card-content {
+  display: block !important;
+}
+
+#fichaContainer .recurso-card .card-image {
+  position: absolute !important;
+  top: -20px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 52px !important;
+  height: 52px !important;
+  min-height: 52px !important;
+  border-radius: 10px !important;
+  border: 3px solid #ffffff !important;
+  background: #e8f5ee !important;
+  box-shadow: 0 2px 0 #d0e8d0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  z-index: 3 !important;
+}
+
+#fichaContainer .resource-icon {
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.72;
+}
+
+#fichaContainer .icon-consultorios {
+  background-image: url('../img/imagenes/recursos/icons/consultorios.svg');
+}
+
+#fichaContainer .icon-camas {
+  background-image: url('../img/imagenes/recursos/icons/camas.svg');
+}
+
+#fichaContainer .icon-modulo {
+  background-image: url('../img/imagenes/recursos/icons/modulos.svg');
+}
+
+#fichaContainer .icon-quirofanos {
+  background-image: url('../img/imagenes/recursos/icons/quirofanos.svg');
+}
+
+#fichaContainer .icon-urgencias {
+  background-image: url('../img/imagenes/recursos/icons/urgencias.svg');
+}
+
+#fichaContainer .icon-diagnostico {
+  background-image: url('../img/imagenes/recursos/icons/diagnostico.svg');
+}
+
+#fichaContainer .icon-equipo_medico {
+  background-image: url('../img/imagenes/recursos/icons/equipo_medico.svg');
+}
+
+#fichaContainer .icon-procedimiento {
+  background-image: url('../img/imagenes/recursos/icons/procedimiento.svg');
+}
+
+#fichaContainer .icon-hemodialisis {
+  background-image: url('../img/imagenes/recursos/icons/hemodialisis.svg');
+}
+
+#fichaContainer .icon-tomografia {
+  background-image: url('../img/imagenes/recursos/icons/tomografia.svg');
+}
+
+#fichaContainer .icon-ambulancias {
+  background-image: url('../img/imagenes/recursos/icons/ambulancias.svg');
+}
+
+#fichaContainer .recurso-card .card-data {
+  padding: 10px 12px 12px !important;
+}
+
+#fichaContainer .recurso-card .data-row {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 4px 0 !important;
+  border-bottom: 0.5px solid #f0f4f0 !important;
+  font-size: 11px !important;
+  background: transparent !important;
+}
+
+#fichaContainer .recurso-card .data-row:last-child {
+  border-bottom: none !important;
+}
+
+#fichaContainer .recurso-card .data-row.highlight {
+  background: transparent !important;
+  border: none !important;
+  padding: 6px 0 !important;
+}
+
+#fichaContainer .recurso-card .data-row.highlight span:first-child {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #1a3a1a !important;
+}
+
+#fichaContainer .recurso-card .data-row.highlight span:last-child {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: #1a5c2e !important;
+  min-width: 34px !important;
+}
+
+#fichaContainer .recurso-card .data-row span:first-child {
+  font-size: 11px !important;
+  color: #6a8a6a !important;
+  font-weight: 500 !important;
+  margin-right: 8px !important;
+}
+
+#fichaContainer .recurso-card .data-row span:last-child {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #1a3a1a !important;
+  text-align: right !important;
+}
+
+@media (max-width: 980px) {
+  #fichaContainer .recursos-two-columns {
+    grid-template-columns: 1fr !important;
+  }
+
+  #fichaContainer .recursos-column {
+    gap: 12px !important;
+  }
+}
+
+/* Recursos v6 - 2 columnas y cards de altura uniforme con scroll */
+#fichaContainer .recursos-two-columns {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: start !important;
+}
+
+#fichaContainer .recursos-column {
+  display: grid !important;
+  grid-auto-rows: 236px !important;
+  gap: 12px !important;
+}
+
+#fichaContainer .recurso-card {
+  height: 236px !important;
+  min-height: 236px !important;
+  max-height: 236px !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#fichaContainer .recurso-card .card-header.red {
+  flex: 0 0 auto !important;
+}
+
+#fichaContainer .recurso-card .card-content {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  display: block !important;
+}
+
+#fichaContainer .recurso-card .card-data {
+  height: 100% !important;
+  min-height: 0 !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  padding-right: 8px !important;
+  scrollbar-width: thin;
+  scrollbar-color: #9ab39f #eef4ef;
+}
+
+#fichaContainer .recurso-card .card-data::-webkit-scrollbar {
+  width: 6px;
+}
+
+#fichaContainer .recurso-card .card-data::-webkit-scrollbar-track {
+  background: #eef4ef;
+  border-radius: 99px;
+}
+
+#fichaContainer .recurso-card .card-data::-webkit-scrollbar-thumb {
+  background: #9ab39f;
+  border-radius: 99px;
+}
+
+@media (max-width: 980px) {
+  #fichaContainer .recursos-two-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  #fichaContainer .recursos-column {
+    grid-auto-rows: 224px !important;
+  }
+
+  #fichaContainer .recurso-card {
+    height: 224px !important;
+    min-height: 224px !important;
+    max-height: 224px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  #fichaContainer .recursos-two-columns {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Ajuste fino de titulo de columna */
+#fichaContainer h3.column-title {
+  margin: 0 0 2px 0 !important;
+  padding: 0 2px !important;
+  font-size: 10px !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+  letter-spacing: 1.2px !important;
+  color: #6f8a72 !important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+#fichaContainer h3.column-title::before {
+  content: '';
+  width: 18px;
+  height: 2px;
+  border-radius: 99px;
+  background: #8ea892;
+  opacity: 0.9;
+}
+
+/* Fix final: evitar caja gigante en column-title */
+#fichaContainer .recursos-column {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+#fichaContainer .recursos-column>h3.column-title {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  margin: 0 0 4px 0 !important;
+  padding: 0 2px !important;
+  align-self: flex-start !important;
+}
+
+#fichaContainer .recursos-column>.recurso-card {
+  height: 220px !important;
+  min-height: 220px !important;
+  max-height: 220px !important;
+}
+
+#fichaContainer .recursos-column>.recurso-card .card-content {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  flex: 1 1 auto !important;
+}
+
+#fichaContainer .recursos-column>.recurso-card .card-data {
+  box-sizing: border-box !important;
+  height: 100% !important;
+  padding-top: 8px !important;
+  padding-bottom: 10px !important;
+  display: block !important;
+  justify-content: flex-start !important;
+  align-content: flex-start !important;
+  scroll-padding-top: 8px;
+}
+
+#fichaContainer .recursos-column>.recurso-card:last-child {
+  margin-bottom: 16px !important;
+}
+
+#fichaContainer .recursos-two-columns {
+  padding-bottom: 24px !important;
+}

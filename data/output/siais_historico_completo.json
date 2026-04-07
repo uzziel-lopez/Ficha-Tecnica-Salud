@@ -1,0 +1,72 @@
+{
+  "metadatos": {
+    "fecha_creacion": "2026-04-06T00:00:00",
+    "ultima_actualizacion": "2026-04-06T00:00:00",
+    "año": 2026,
+    "version": "demo-1.0",
+    "descripcion": "Historico SIAIS demo anonimizado para portafolio"
+  },
+  "periodos": {
+    "202601": {
+      "fecha_consulta": "2026-04-06T00:00:00",
+      "servidores": [
+        {
+          "servidor_ip": "0.0.0.0",
+          "servidor_nombre": "SERVIDOR_DEMO",
+          "periodo": 202601,
+          "matricula": 999999999999,
+          "fecha_consulta": "2026-04-06T00:00:00",
+          "categorias": {
+            "Total de Consultas de la Unidad": {
+              "valor": 1200
+            },
+            "Consultas de Medicina Familiar": {
+              "valor": 800
+            },
+            "Consultas Aten 1ra. Vez": {
+              "valor": 200
+            },
+            "ATENCION MEDICA CONTINUA - URGENCIAS": {
+              "valor": 120
+            }
+          },
+          "claves_presupuestales": {
+            "280000000000": {
+              "nombre_unidad": "UMF DEMO 01",
+              "categorias": {
+                "Total de Consultas de la Unidad": {
+                  "valor": 1200
+                },
+                "Consultas de Medicina Familiar": {
+                  "valor": 800
+                },
+                "Consultas Aten 1ra. Vez": {
+                  "valor": 200
+                },
+                "ATENCION MEDICA CONTINUA - URGENCIAS": {
+                  "valor": 120
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "resumen_anual": {
+    "Total de Consultas de la Unidad": 1200,
+    "Consultas de Medicina Familiar": 800,
+    "Consultas de M.F. fin de semana": 50,
+    "Consultas Aten 1ra. Vez": 200,
+    "Consultas de M.F. Subsecuentes": 600,
+    "ESTOMATOLOGIA": 30,
+    "SALUD EN EL TRABAJO": 20,
+    "ATENCION MEDICA CONTINUA - URGENCIAS": 120,
+    "CENTRO DE ATENCION A LA DIABETES EN EL IMSS (CADIMSS)": 25,
+    "PLANIFICACION FAMILIAR": 40,
+    "NUTRICION Y DIETETICA": 15,
+    "TRABAJO SOCIAL": 10,
+    "MEDICINA PREVENTIVA": 60,
+    "ENFERMERA ESPECIALISTA EN MEDICINA FAMILIAR": 35
+  }
+}

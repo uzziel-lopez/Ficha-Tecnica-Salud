@@ -1,0 +1,6 @@
+{
+  "input_dir": "data/input",
+  "output_dir": "data/output",
+  "ifu_source_dir": "data/input",
+  "chrome_driver_path": "chromedriver"
+}

@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local editor
+.vscode/
+.claude/
+
+# Node
+node_modules/
+.playwright/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# ETL outputs and backups
+data/output/*_backup_*.json
+data/output/*.tmp
+data/output/fichas_completas_tabasco.json
+
+# Local and sensitive data inputs
+data/input/**
+!data/input/.gitkeep
+
+# OS artifacts
+.DS_Store
+Thumbs.db

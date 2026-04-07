@@ -1,0 +1,215 @@
+{
+  "metadatos": {
+    "fecha_generacion": "2026-04-06 00:00:00",
+    "fuente": "demo_publico_anonimizado",
+    "total_unidades": 1,
+    "unidades_con_datos_admin": 1,
+    "descripcion": "Dataset demo anonimizado para portafolio"
+  },
+  "resumen_general": {
+    "por_zona": {
+      "ZONA DEMO": {
+        "total_unidades": 1,
+        "poblacion_total": 120000,
+        "municipios": [
+          "MUNICIPIO DEMO"
+        ]
+      }
+    },
+    "por_tipo_unidad": {
+      "Unidad de Medicina Familiar": 1
+    },
+    "por_nivel_atencion": {
+      "Primer Nivel": 1
+    }
+  },
+  "unidades": [
+    {
+      "informacion_general": {
+        "zona": "ZONA DEMO",
+        "municipio": "MUNICIPIO DEMO",
+        "clave_presupuestal": "280000000000",
+        "nombre_unidad": "UMF DEMO 01",
+        "tipo_unidad": "Unidad de Medicina Familiar",
+        "nivel_atencion": "Primer Nivel",
+        "ubicacion": "Localidad Demo",
+        "jurisdiccion": "Zona Demo",
+        "datos_administrativos_disponibles": true,
+        "responsable": "Responsable Demo",
+        "cargo": "Director(a) de Unidad Medica",
+        "clues": "TCIMSDEMO001",
+        "domicilio": "Domicilio Demo",
+        "denominacion_completa": "UMF DEMO 01",
+        "municipio_administrativo": "Municipio Demo",
+        "estado": "Tabasco",
+        "datos_administrativos_completos": {
+          "Región 2021": "Sureste",
+          "CLUES  Salud": "TCIMSDEMO001",
+          "Clave Personal": "28DEMO",
+          "Unidad de Información PREI": 280001,
+          "Clave Ubicación Admin.": 280000,
+          "Clave Presupuestal": 280000000000,
+          "Clave Delegación o UMAE": 28,
+          "Nombre Delegación o UMAE": "Tabasco",
+          "Relación Delegación-UMAE": "Tabasco",
+          "Unidad Presupuestal": 2000,
+          "Nivel de Atención": "Primer Nivel",
+          "Denominación Unidad": "UMF DEMO 01",
+          "Tipo de Servicio": 25,
+          "Descripción Tipo Servicio": "UMF",
+          "Número de Unidad": 1,
+          "Nombre Unidad": "Unidad de Medicina Familiar Demo",
+          "Ubicación o Denominación": "Localidad Demo",
+          "Dirección": "Domicilio Demo",
+          "Tipo de Vialidad": "Calle",
+          "Nombre de Vialidad": "Principal",
+          "Número Exterior": "S/N",
+          "Tipo de Asentamiento": "Colonia",
+          "Nombre del Asentamiento": "Centro",
+          "Código postal": 86000,
+          "Clave Municipio o Delegación": 1,
+          "Municipio o Delegación": "Municipio Demo",
+          "Clave Localidad": 1,
+          "Localidad": "Localidad Demo",
+          "Clave Entidad Federativa": 27,
+          "Entidad Federativa": "Tabasco",
+          "Clave Jurisdicción Sanitaria": 4,
+          "Jurisdicción Sanitaria": "Centro",
+          "Latitud": 17.98,
+          "Longitud": -92.93,
+          "Inicio de Productividad": "2010-01-01 00:00:00",
+          "Grado de Marginación": "Bajo",
+          "Superficie total en metros cuadrados": 1500,
+          "Superficie construida en metros cuadrados": 900,
+          "Nombre del Director": "Responsable Demo",
+          "Cargo": "Director(a) de Unidad Medica"
+        }
+      },
+      "poblacion_adscrita": {
+        "total": 120000,
+        "titulares": 72000,
+        "beneficiarios": 48000,
+        "medico_familiar": 100000
+      },
+      "poblacion_asegurada": {
+        "riesgos_trabajo": 40000,
+        "enfermedad_maternidad": 80000,
+        "invalidez": 39000,
+        "trabajadores_imss": 500
+      },
+      "piramide_poblacional": {
+        "total_poblacion": {
+          "0 a 4": 9000,
+          "5 a 9": 10000,
+          "10 a 14": 11000,
+          "15 a 19": 12000,
+          "20 a 24": 10000,
+          "25 a 29": 9500,
+          "30 a 34": 9000,
+          "35 a 39": 8500,
+          "40 a 44": 8000,
+          "45 a 49": 7500,
+          "50 a 54": 7000,
+          "55 a 59": 6500,
+          "60 y más": 12000
+        },
+        "poblacion_hombres": {
+          "0 a 4": 4500,
+          "5 a 9": 5000,
+          "10 a 14": 5500,
+          "15 a 19": 6000,
+          "20 a 24": 5000,
+          "25 a 29": 4700,
+          "30 a 34": 4500,
+          "35 a 39": 4200,
+          "40 a 44": 4000,
+          "45 a 49": 3700,
+          "50 a 54": 3500,
+          "55 a 59": 3200,
+          "60 y más": 5800
+        },
+        "poblacion_mujeres": {
+          "0 a 4": 4500,
+          "5 a 9": 5000,
+          "10 a 14": 5500,
+          "15 a 19": 6000,
+          "20 a 24": 5000,
+          "25 a 29": 4800,
+          "30 a 34": 4500,
+          "35 a 39": 4300,
+          "40 a 44": 4000,
+          "45 a 49": 3800,
+          "50 a 54": 3500,
+          "55 a 59": 3300,
+          "60 y más": 6200
+        }
+      },
+      "recursos_para_la_salud": {
+        "consultorios": {
+          "total_consultorio_unidad": 12,
+          "medicina_familiar": 8,
+          "especialidad": 1,
+          "urgencias_medicas": 1,
+          "atn_medica_continua": 1,
+          "cadimss": 0,
+          "planificacion_familiar": 1,
+          "profesionales": 0,
+          "estomatologia": 1,
+          "nutricion_dietetica": 1
+        },
+        "camas_censables": {
+          "total_censables": 0
+        },
+        "camas_no_censables": {
+          "no_censables": 0
+        },
+        "quirofanos": {
+          "quirofanos": 0
+        },
+        "urgencias": {
+          "total_camas_urgencias": 2
+        },
+        "equipos_diagnostico": {
+          "peine_laboratorio_clinico": 1,
+          "tomografos": 0,
+          "rayos_x_fijos": 1,
+          "rayos_x_transportable": 0,
+          "mastografo_digital": 0,
+          "electrocardiografo": 2,
+          "electromiografo": 0,
+          "electroencefalografo": 0,
+          "ecocardiografo": 0
+        },
+        "procedimientos": {
+          "procedimientos_quirurgicos": 0,
+          "endoscopia_altas": 0,
+          "endoscopia_bajas": 0,
+          "radiodiagnostico": 1
+        },
+        "hemodialisis": {
+          "maquinas_hemodialisis": 0,
+          "areas_hemodialisis": 0
+        },
+        "ambulancias": {
+          "ambulancias": 1,
+          "ambulancias_equipadas": 1
+        },
+        "servicios_especiales": {
+          "banco_sangre": 0,
+          "prevenimss": 1,
+          "enf_esp_med_familiar": 1,
+          "atencion_orientacion_dh": 1
+        }
+      },
+      "productividad_medicina_familiar": {},
+      "productividad_servicios_auxiliares": {},
+      "productividad_servicios_medicos": {},
+      "motivos_atencion": {
+        "medicina_familiar": [],
+        "urgencias": [],
+        "especialidades": [],
+        "periodo": "2026"
+      }
+    }
+  ]
+}

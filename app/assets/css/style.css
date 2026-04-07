@@ -1,0 +1,1278 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: 'Arial', sans-serif;
+      background: #f5f5f5;
+      padding: 0;
+  }
+
+  /* Navbar Styles */
+  .navbar {
+      background: linear-gradient(135deg, #006B3A 0%, #008F44 100%);
+      color: white;
+      padding: 15px 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+  }
+
+  .navbar-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+
+  .navbar-title {
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+  .navbar-controls {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+  }
+
+  .select-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .select-label {
+      font-size: 14px;
+      font-weight: 500;
+  }
+
+  .unit-select {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      min-width: 300px;
+      background: white;
+      color: #333;
+      cursor: pointer;
+  }
+
+  .unit-select:focus {
+      outline: 2px solid #4CAF50;
+  }
+
+  .loading-indicator {
+      display: none;
+      font-size: 14px;
+      margin-left: 10px;
+  }
+
+  .status-badge {
+      padding: 4px 8px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: bold;
+  }
+
+  .status-complete {
+      background: #4CAF50;
+      color: white;
+  }
+
+  .status-partial {
+      background: #FF9800;
+      color: white;
+  }
+
+  /* Ficha Styles - Reutilizando los existentes */
+  .ficha-container {
+      max-width: 1444px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+      background: linear-gradient(135deg, #006B3A 0%, #008F44 100%);
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .header-left h1 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+  }
+
+  .header-left h2 {
+      font-size: 14px;
+      opacity: 0.9;
+      font-weight: normal;
+  }
+
+  .header-right {
+      text-align: center;
+  }
+
+  .logo {
+      width: 80px;
+      height: 80px;
+      background: white;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      font-weight: bold;
+      color: #006B3A;
+      font-size: 12px;
+  }
+
+  .hospital-title {
+      background: #D4B896;
+      color: #8B4513;
+      padding: 12px 30px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+  }
+
+  .info-section {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 30px;
+      padding: 30px;
+  }
+
+  .hospital-image {
+      width: 100%;
+      height: 320px;
+      background: #f0f0f0;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      overflow: hidden;
+      font-size: 18px;
+      color: #666;
+  }
+
+  .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px 30px;
+  }
+
+  .info-item {
+      display: flex;
+      margin-bottom: 8px;
+  }
+
+  .info-label {
+      font-weight: bold;
+      color: #333;
+      min-width: 120px;
+      margin-right: 10px;
+  }
+
+  .info-value {
+      color: #555;
+      flex: 1;
+  }
+
+  .technical-info {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+
+  }
+
+  .technical-info h3 {
+      color: #006B3A;
+      margin-bottom: 15px;
+      font-size: 16px;
+  }
+
+  .population-section {
+      background: #006B3A;
+      color: white;
+      padding: 15px 30px;
+      margin: 0;
+  }
+
+  .population-section h2 {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+
+  .zone-title {
+      background: #D4B896;
+      color: #8B4513;
+      padding: 8px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+  }
+
+  .population-data {
+      padding: 20px 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+  }
+
+  .population-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+  }
+
+  .population-item:last-child {
+      border-bottom: none;
+  }
+
+  .population-label {
+      font-weight: 500;
+      color: #333;
+      flex: 1;
+  }
+
+  .population-value {
+      font-weight: bold;
+      color: #006B3A;
+      margin-left: 20px;
+  }
+
+  .demographics-section {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+  }
+
+  .pyramid-section {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .table-section {
+      overflow-x: auto;
+      width: 100%;
+  }
+
+  .pyramid-titles {
+      display: grid;
+      grid-template-columns: 1fr 200px 1fr;
+      text-align: center;
+      margin-bottom: 20px;
+      gap: 20px;
+  }
+
+  .pyramid-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+  }
+
+  .pyramid-icons {
+      display: grid;
+      grid-template-columns: 1fr 200px 1fr;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+
+  .icon-male,
+  .icon-female {
+      font-size: 40px;
+  }
+
+  .icon-male {
+      color: #4A90E2;
+  }
+
+  .icon-female {
+      color: #E94B7A;
+  }
+
+  .pyramid-chart {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      max-width: 800px;
+      margin: 0 auto;
+  }
+
+  .pyramid-row {
+      display: grid;
+      grid-template-columns: 1fr 120px 1fr;
+      align-items: center;
+      gap: 5px;
+      height: 22px;
+  }
+
+  .male-side {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  }
+
+  .female-side {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .age-label {
+      text-align: center;
+      font-weight: bold;
+      font-size: 11px;
+      color: #333;
+      background: #f8f9fa;
+      padding: 2px 4px;
+      border-radius: 3px;
+      border: 1px solid #ddd;
+  }
+
+  .pyramid-bar {
+      height: 18px;
+      display: flex;
+      align-items: center;
+      font-size: 10px;
+      color: white;
+      font-weight: bold;
+      border-radius: 3px;
+      position: relative;
+  }
+
+  .male-bar {
+      background: linear-gradient(90deg, #4A90E2, #357ABD);
+      justify-content: flex-start;
+      padding-left: 5px;
+  }
+
+  .female-bar {
+      background: linear-gradient(90deg, #E94B7A, #D63384);
+      justify-content: flex-end;
+      padding-right: 5px;
+  }
+
+  .age-table {
+      background: #f8f9fa;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #ddd;
+      min-width: 600px;
+  }
+
+  .table-header {
+      background: #006B3A;
+      color: white;
+      padding: 12px 8px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 15px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 20px;
+  }
+
+  .table-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 20px;
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+      font-size: 14px;
+  }
+
+  .table-row:nth-child(even) {
+      background: #f9f9f9;
+  }
+
+  .table-row:nth-child(odd) {
+      background: white;
+  }
+
+  .table-total {
+      background: #8B4513 !important;
+      color: white;
+      font-weight: bold;
+  }
+
+  .table-cell {
+      text-align: center;
+      padding: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .table-cell.age-group {
+      font-weight: bold;
+      text-align: left;
+      justify-content: flex-start;
+  }
+
+  .footer-info {
+      background: #f8f9fa;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: #666;
+      border-top: 1px solid #dee2e6;
+  }
+
+  .footer-right {
+      font-weight: bold;
+      color: #8B4513;
+  }
+
+  /* Media queries para responsividad */
+  @media (max-width: 1264px) {
+      .demographics-section {
+          grid-template-columns: 1fr;
+          gap: 30px;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .navbar-content {
+          flex-direction: column;
+          gap: 15px;
+      }
+
+      .unit-select {
+          min-width: 280px;
+      }
+
+      .info-section {
+          grid-template-columns: 1fr;
+          gap: 20px;
+      }
+
+      .info-grid {
+          grid-template-columns: 1fr;
+      }
+
+      .population-data {
+          grid-template-columns: 1fr;
+          gap: 15px;
+      }
+
+      .table-header,
+      .table-row {
+          font-size: 10px;
+          grid-template-columns: 100px 60px 30px 60px 30px 60px 30px;
+          gap: 5px;
+          padding: 8px 4px;
+      }
+
+      .pyramid-row {
+          grid-template-columns: 1fr 80px 1fr;
+          gap: 5px;
+      }
+
+      .pyramid-bar {
+          font-size: 9px;
+          min-width: 40px;
+      }
+  }
+
+  /* Error y loading states */
+  .error-message {
+      background: #f8d7da;
+      color: #721c24;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 8px;
+      text-align: center;
+  }
+
+  .no-data-message {
+      background: #fff3cd;
+      color: #856404;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 8px;
+      text-align: center;
+  }
+
+
+  /* ✅ ESTILOS PARA EL SISTEMA DE IMÁGENES DE UNIDADES */
+
+  /* Contenedor principal de la imagen */
+  .hospital-image-container {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      margin-bottom: 20px;
+  }
+
+  /* Imagen principal */
+  .hospital-image {
+      width: 100%;
+      height: 106%;
+      transition: all 0.5s ease;
+      opacity: 0;
+      transform: scale(1);
+  }
+
+  /* Estados de la imagen */
+  .hospital-image.imagen-cargada {
+      opacity: 1;
+  }
+
+  .hospital-image.imagen-error {
+      opacity: 0.7;
+      filter: grayscale(50%);
+  }
+
+  /* Overlay con gradiente */
+  .image-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+      padding: 20px;
+      color: white;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+  }
+
+  /* ✅ ESTILOS PARA EL BADGE DEL TIPO DE UNIDAD */
+  .unit-type-badge {
+      background: linear-gradient(135deg, #006B3A 0%, #008F44 100%);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 107, 58, 0.3);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+      display: inline-block;
+      white-space: nowrap;
+  }
+
+  /* Variaciones de color por tipo de unidad */
+  .unit-type-badge.hgz {
+      background: linear-gradient(135deg, #DC2626 0%, #EF4444 100%);
+      box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+  }
+
+  .unit-type-badge.umf {
+      background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
+      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+  }
+
+  .unit-type-badge.hgs {
+      background: linear-gradient(135deg, #7C3AED 0%, #8B5CF6 100%);
+      box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+  }
+
+  .unit-type-badge.hgszmf {
+      background: linear-gradient(135deg, #EA580C 0%, #FB923C 100%);
+      box-shadow: 0 4px 15px rgba(234, 88, 12, 0.3);
+  }
+
+  /* Efecto hover */
+  .unit-type-badge:hover {
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 107, 58, 0.4);
+  }
+
+  /* ✅ EFECTOS DE TRANSICIÓN AL CAMBIAR UNIDAD */
+  .hospital-image-container.cambiando {
+      position: relative;
+  }
+
+  .hospital-image-container.cambiando .hospital-image {
+      opacity: 0;
+      transform: scale(0.95);
+  }
+
+  .hospital-image-container.cambiando::after {
+      content: '⏳ Cargando imagen...';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: bold;
+      z-index: 10;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  /* ✅ PLACEHOLDER ANTES DE CARGAR IMAGEN */
+  .hospital-image-container::before {
+      content: '🏥';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      opacity: 0.2;
+      z-index: 1;
+      transition: opacity 0.3s ease;
+  }
+
+  .hospital-image-container:has(.imagen-cargada)::before {
+      opacity: 0;
+  }
+
+  /* ✅ HOVER EFFECTS PARA LA IMAGEN */
+  .hospital-image-container:hover .hospital-image {
+      transform: scale(1.03);
+  }
+
+  .hospital-image-container:hover .image-overlay {
+      background: linear-gradient(transparent, rgba(0, 107, 58, 0.9));
+  }
+
+  .hospital-image-container:hover .unit-type-badge {
+      transform: translateY(-3px) scale(1.1);
+  }
+
+  /* ✅ ANIMACIÓN DE ENTRADA */
+  @keyframes fadeInImage {
+      from {
+          opacity: 0;
+          transform: scale(0.9) translateY(20px);
+      }
+
+      to {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+      }
+  }
+
+  .hospital-image.imagen-cargada {
+      animation: fadeInImage 0.6s ease-out;
+  }
+
+  /* ✅ RESPONSIVO PARA MÓVILES */
+  @media (max-width: 768px) {
+      .hospital-image-container {
+          height: 200px;
+          margin-bottom: 15px;
+      }
+
+      .image-overlay {
+          padding: 15px;
+      }
+
+      .unit-type-badge {
+          font-size: 11px;
+          padding: 8px 16px;
+          letter-spacing: 0.5px;
+      }
+
+      .hospital-image-container::before {
+          font-size: 40px;
+      }
+  }
+
+  @media (max-width: 480px) {
+      .hospital-image-container {
+          height: 160px;
+      }
+
+      .unit-type-badge {
+          font-size: 10px;
+          padding: 6px 12px;
+      }
+
+      .image-overlay {
+          padding: 10px;
+      }
+  }
+
+
+
+  .logo {
+      width: 80px;
+      height: 80px;
+      background: white;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      font-weight: bold;
+      color: #006B3A;
+      font-size: 12px;
+      overflow: hidden;
+  }
+
+  .logo img {
+      width: 60%;
+      height: 100%;
+      object-fit: contain;
+  }
+
+
+
+
+  /* ===================================================
+     RECURSOS PARA LA SALUD - Rediseno
+     =================================================== */
+
+  .recursos-salud-section {
+      background: #f0f4f2;
+      margin: 0;
+      padding: 0;
+      border-top: 3px solid #1e6a48;
+  }
+
+  .recursos-header {
+      background: linear-gradient(135deg, #0f3d27 0%, #1e6a48 60%, #257a55 100%);
+      color: white;
+      padding: 18px 32px;
+      text-align: center;
+      position: relative;
+  }
+
+  .recursos-header::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.40);
+      border-radius: 2px;
+      margin: 8px auto 0;
+  }
+
+  .recursos-header h2 {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+  }
+
+  /* Layout de 2 columnas */
+  .recursos-two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      padding: 24px;
+      background: #f0f4f2;
+  }
+
+  /* Cada columna */
+  .recursos-column {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+  }
+
+  /* Titulo de columna */
+  .column-title {
+      background: linear-gradient(135deg, #1e6a48 0%, #257a55 100%);
+      color: #ffffff;
+      text-align: center;
+      padding: 11px 16px;
+      margin: 0;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(30, 106, 72, 0.25);
+  }
+
+  /* Card principal */
+  .recurso-card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(15, 61, 39, 0.08), 0 1px 3px rgba(15, 61, 39, 0.05);
+      overflow: hidden;
+      border: 1px solid #d4dfd8;
+      transition: box-shadow 0.22s ease, transform 0.22s ease;
+  }
+
+  .recurso-card:hover {
+      box-shadow: 0 6px 20px rgba(15, 61, 39, 0.13), 0 2px 6px rgba(15, 61, 39, 0.07);
+      transform: translateY(-2px);
+  }
+
+  /* Header de cada card */
+  .card-header {
+      color: white;
+      padding: 9px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+  }
+
+  .card-header.red {
+      background: linear-gradient(90deg, #1e6a48 0%, #2f9162 100%);
+  }
+
+  /* Contenido de cada card */
+  .card-content {
+      display: flex;
+      min-height: 100px;
+  }
+
+  /* Imagen de la card (columna de icono) */
+  .card-image {
+      width: 80px;
+      flex-shrink: 0;
+      overflow: hidden;
+      background: linear-gradient(160deg, #e8f5ee 0%, #f0f7f3 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid #e4ece7;
+  }
+
+  .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  /* Icono del recurso */
+  .resource-icon {
+      display: block;
+      width: 44px;
+      height: 44px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.70;
+      filter: hue-rotate(120deg) brightness(0.55);
+  }
+
+  /* Datos de la card */
+  .card-data {
+      flex: 1;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background: #ffffff;
+  }
+
+  /* Cada fila de datos */
+  .data-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 12px;
+      font-size: 12px;
+      border-bottom: 1px solid #f0f4f2;
+      transition: background 0.15s ease;
+  }
+
+  .data-row:last-child {
+      border-bottom: none;
+  }
+
+  .data-row:hover {
+      background: #f5faf7;
+  }
+
+  /* Primera fila = total, destacada */
+  .data-row.highlight:first-child {
+      background: #e8f5ee;
+      border-bottom: 1px solid #c8e6d5;
+      font-weight: 700;
+  }
+
+  .data-row.highlight:first-child span:first-child {
+      color: #0f3d27;
+      font-weight: 700;
+  }
+
+  .data-row.highlight:first-child span:last-child {
+      color: #1e6a48;
+      font-size: 14px;
+      font-weight: 800;
+  }
+
+  /* Resto de filas */
+  .data-row.highlight {
+      background: transparent;
+      padding: 5px 12px;
+      margin: 0;
+      border-radius: 0;
+  }
+
+  /* Fila total explícita */
+  .data-row.total {
+      font-weight: 700;
+      background: #e8f5ee;
+      border-bottom: 2px solid #c8e6d5;
+      padding: 7px 12px;
+  }
+
+  /* Texto etiqueta */
+  .data-row span:first-child {
+      color: #3d5248;
+      font-weight: 500;
+      flex: 1;
+      margin-right: 10px;
+      line-height: 1.3;
+      font-size: 12px;
+  }
+
+  /* Valor numérico */
+  .data-row span:last-child {
+      color: #1a2820;
+      font-weight: 700;
+      font-size: 13px;
+      min-width: 28px;
+      text-align: center;
+      background: #f0f4f2;
+      border-radius: 5px;
+      padding: 1px 6px;
+  }
+
+  /* Valor de fila total */
+  .data-row.total span:last-child {
+      color: #1e6a48;
+      font-size: 14px;
+      background: #c8e6d5;
+  }
+
+  /* Responsivo */
+  @media (max-width: 1280px) {
+      .recursos-two-columns {
+          gap: 18px;
+          padding: 18px;
+      }
+  }
+
+  @media (max-width: 1024px) {
+      .recursos-two-columns {
+          grid-template-columns: 1fr;
+          gap: 16px;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .recursos-two-columns {
+          padding: 14px;
+          gap: 12px;
+      }
+
+      .card-content {
+          flex-direction: column;
+          min-height: auto;
+      }
+
+      .card-image {
+          width: 100%;
+          height: 60px;
+          border-right: none;
+          border-bottom: 1px solid #e4ece7;
+      }
+
+      .card-data {
+          padding: 0;
+      }
+
+      .data-row {
+          font-size: 11px;
+          padding: 5px 10px;
+      }
+
+      .column-title {
+          font-size: 12px;
+          padding: 9px 12px;
+      }
+  }
+
+  /* ===================================
+   SECCIONES DE PRODUCTIVIDAD - Paleta Café y Verde
+   =================================== */
+
+  .productividad-section {
+      margin: 30px 0;
+      background: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      border: 2px solid #8B4513;
+  }
+
+  .productividad-header {
+      background: #8B4513;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+  }
+
+  .productividad-header h2 {
+      margin: 0;
+      font-size: 1.4em;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: white;
+  }
+
+  .productividad-table-container {
+      overflow-x: auto;
+      background: white;
+  }
+
+  .productividad-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 1200px;
+      font-size: 0.85em;
+  }
+
+  .productividad-table thead {
+      background: #006B3A;
+      color: white;
+  }
+
+  .productividad-table th {
+      padding: 12px 8px;
+      text-align: center;
+      font-weight: bold;
+      border: 1px solid #8B4513;
+      font-size: 0.8em;
+      white-space: nowrap;
+      color: white;
+  }
+
+  .productividad-table .indicator-column {
+      width: 250px;
+      text-align: left;
+      padding-left: 15px;
+      background: #006B3A;
+      font-weight: bold;
+  }
+
+  .productividad-table .total-column {
+      width: 100px;
+      font-weight: bold;
+      color: white;
+  }
+
+  .productividad-table tbody tr:nth-child(even) {
+      background-color: #f8f9fa;
+  }
+
+  .productividad-table tbody tr:hover {
+      background-color: #D4B896;
+      transform: scale(1.01);
+      transition: all 0.2s ease;
+  }
+
+  .productividad-table td {
+      padding: 10px 8px;
+      text-align: center;
+      border: 1px solid #8B4513;
+      font-size: 0.9em;
+      color: #333;
+  }
+
+  .productividad-table .indicator-name {
+      text-align: left;
+      padding-left: 15px;
+      font-weight: 700;
+      background: #D4B896;
+      color: #8B4513;
+
+  }
+
+  .productividad-table .data-cell {
+      background: white;
+      color: #333;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+  }
+
+  .productividad-table .data-cell:hover {
+      background-color: #D4B896;
+      color: #8B4513;
+  }
+
+  .productividad-table .total-cell {
+      color: black;
+      font-weight: bold;
+      font-size: 1em;
+  }
+
+  /* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+  @media (max-width: 1200px) {
+      .productividad-table {
+          min-width: 1000px;
+          font-size: 0.8em;
+      }
+
+      .productividad-table th,
+      .productividad-table td {
+          padding: 8px 6px;
+      }
+
+      .productividad-header h2 {
+          font-size: 1.2em;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .productividad-section {
+          margin: 20px 10px;
+      }
+
+      .productividad-table {
+          font-size: 0.75em;
+          min-width: 900px;
+      }
+
+      .productividad-table th,
+      .productividad-table td {
+          padding: 6px 4px;
+      }
+
+      .productividad-table .indicator-column {
+          width: 200px;
+      }
+
+      .productividad-header {
+          padding: 12px 15px;
+      }
+
+      .productividad-header h2 {
+          font-size: 1.1em;
+      }
+  }
+
+  /* ===================================
+   EFECTOS VISUALES (solo en pantalla)
+   =================================== */
+
+  @media screen {
+      .productividad-table tbody tr {
+          transition: all 0.3s ease;
+      }
+
+      .productividad-table tbody tr:hover .indicator-name {
+          background: #006B3A;
+          color: white;
+          border-left-color: #8B4513;
+      }
+  }
+
+  /* ===================================
+   IMPRESIÓN - Mantiene colores con buena legibilidad
+   =================================== */
+
+  @media print {
+      .productividad-section {
+          box-shadow: none;
+          margin: 15px 0;
+          page-break-inside: avoid;
+          border: 2px solid #8B4513;
+      }
+
+      .productividad-header .card-header.red {
+          background: #8B4513 !important;
+          color: white !important;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+      }
+
+      .productividad-header h2 {
+          color: white !important;
+      }
+
+      .productividad-table thead {
+          background: #006B3A !important;
+          color: white !important;
+      }
+
+      .productividad-table th {
+          background: #006B3A !important;
+          color: white !important;
+          border: 1px solid #8B4513 !important;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+      }
+
+      .productividad-table .indicator-column {
+          background: #006B3A !important;
+          color: white !important;
+      }
+
+      .productividad-table .total-column {
+          color: white !important;
+      }
+
+      .productividad-table .indicator-name {
+          background: #D4B896 !important;
+          color: #8B4513 !important;
+          border-left: 3px solid #006B3A !important;
+          font-weight: bold !important;
+      }
+
+      .productividad-table .total-cell {
+          color: black !important;
+          font-weight: bold !important;
+      }
+
+      .productividad-table td {
+          color: #333 !important;
+          border: 1px solid #8B4513 !important;
+      }
+
+      .productividad-table tbody tr:nth-child(even) {
+          background-color: #f8f9fa !important;
+      }
+
+      .productividad-table {
+          font-size: 0.75em;
+      }
+
+      .productividad-table th,
+      .productividad-table td {
+          padding: 6px 4px;
+      }
+  }

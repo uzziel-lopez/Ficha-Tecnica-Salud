@@ -1,0 +1,6 @@
+pandas
+openpyxl
+pyxlsb
+pymssql
+pymysql
+selenium

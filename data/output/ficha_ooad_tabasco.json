@@ -1,0 +1,136 @@
+{
+  "informacion_general": {
+    "tipo_unidad": "OOAD",
+    "nombre_unidad": "OOAD TABASCO DEMO",
+    "denominacion_completa": "ORGANO DE OPERACION ADMINISTRATIVA DESCONCENTRADA DEMO",
+    "responsable": "Responsable OOAD Demo",
+    "cargo": "Titular de Prestaciones Medicas",
+    "ubicacion": "Municipio Demo",
+    "municipio": "Municipio Demo",
+    "zona": "URBANA",
+    "jurisdiccion": "04 - Centro",
+    "clave_presupuestal": "289001050100",
+    "clave_localidad": "0001",
+    "clues": "TBOOADDEMO001",
+    "nivel_atencion": "OOAD",
+    "domicilio": "Domicilio Demo",
+    "longitud": -92.94,
+    "latitud": 17.98,
+    "superficie_total_m2": 4600,
+    "superficie_construida_m2": 1100,
+    "fecha_inicio": "ene/2010",
+    "ficha_tecnica_año": 2026,
+    "datos_administrativos_completos": {
+      "Clave Jurisdicción Sanitaria": "04",
+      "Jurisdicción Sanitaria": "Centro",
+      "Dirección": "Domicilio Demo",
+      "Longitud": -92.94,
+      "Latitud": 17.98,
+      "Superficie total en metros cuadrados": 4600,
+      "Superficie construida en metros cuadrados": 1100,
+      "Unidad de Información PREI": "OOAD TABASCO DEMO",
+      "Clave Personal": "289001050100",
+      "Inicio de Productividad": "ene/2010"
+    }
+  },
+  "poblacion_adscrita": {
+    "total": 180000,
+    "titulares": 110000,
+    "beneficiarios": 70000,
+    "medico_familiar": 150000
+  },
+  "poblacion_asegurada": {
+    "riesgos_trabajo": 60000,
+    "enfermedad_maternidad": 95000,
+    "invalidez": 58000,
+    "trabajadores_imss": 1200
+  },
+  "piramide_poblacional": {
+    "total_poblacion": {
+      "0 a 4": 13000,
+      "5 a 9": 15000,
+      "10 a 14": 16000,
+      "15 a 19": 17000,
+      "20 a 24": 16000,
+      "25 a 29": 15000,
+      "30 a 34": 14000,
+      "35 a 39": 13000,
+      "40 a 44": 12000,
+      "45 a 49": 11000,
+      "50 a 54": 10000,
+      "55 a 59": 9000,
+      "60 y más": 19000
+    },
+    "poblacion_hombres": {},
+    "poblacion_mujeres": {}
+  },
+  "recursos_para_la_salud": {
+    "consultorios": {
+      "total_consultorio_unidad": 80,
+      "medicina_familiar": 30,
+      "especialidad": 25,
+      "urgencias_medicas": 5,
+      "atn_medica_continua": 10,
+      "cadimss": 2,
+      "planificacion_familiar": 3,
+      "profesionales": 5,
+      "estomatologia": 5,
+      "nutricion_dietetica": 4
+    },
+    "camas_censables": {
+      "total_censables": 120,
+      "medicina_interna": 40,
+      "cirugia": 40,
+      "gineco_obstetricia": 20,
+      "pediatria": 20
+    },
+    "camas_no_censables": {
+      "no_censables": 90
+    },
+    "quirofanos": {
+      "quirofanos": 6
+    },
+    "urgencias": {
+      "total_camas_urgencias": 40
+    },
+    "equipos_diagnostico": {
+      "peine_laboratorio_clinico": 10,
+      "tomografos": 1,
+      "rayos_x_fijos": 6,
+      "rayos_x_transportable": 2,
+      "mastografo_digital": 1,
+      "electrocardiografo": 15,
+      "electromiografo": 1,
+      "electroencefalografo": 1,
+      "ecocardiografo": 1
+    },
+    "procedimientos": {
+      "procedimientos_quirurgicos": 2,
+      "endoscopia_altas": 1,
+      "endoscopia_bajas": 1,
+      "radiodiagnostico": 8
+    },
+    "hemodialisis": {
+      "maquinas_hemodialisis": 12,
+      "areas_hemodialisis": 2
+    },
+    "ambulancias": {
+      "ambulancias": 5,
+      "ambulancias_equipadas": 2
+    },
+    "servicios_especiales": {
+      "banco_sangre": 1,
+      "prevenimss": 10,
+      "enf_esp_med_familiar": 8,
+      "atencion_orientacion_dh": 6
+    }
+  },
+  "productividad_medicina_familiar": {},
+  "productividad_servicios_auxiliares": {},
+  "productividad_servicios_medicos": {},
+  "motivos_atencion": {
+    "especialidades": [],
+    "urgencias": [],
+    "periodo": "2026"
+  }
+}
