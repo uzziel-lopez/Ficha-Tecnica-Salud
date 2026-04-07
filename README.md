@@ -1,8 +1,10 @@
-# Ficha Tecnica IMSS Tabasco
+# Ficha Tecnica de Unidades de Salud - Demo de Portafolio
 
 Aplicacion web y pipeline ETL para generar fichas tecnicas por unidad medica, con mapa interactivo, vista detallada y exportacion PDF.
 
 Este repositorio esta preparado para portafolio publico con dataset demo anonimizado.
+
+Aplicacion para visualizar unidades medicas, consultar ficha tecnica y exportar PDF a partir de datos procesados por ETL.
 
 ## Aviso de demo
 

@@ -1,0 +1,7 @@
+*.php linguist-language=PHP
+
+docs/images/* linguist-generated=true
+data/output/*.json linguist-generated=true
+app/assets/img/** linguist-generated=true
+
+data/output/* linguist-vendored=true
